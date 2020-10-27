@@ -20,5 +20,17 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 .govuk-header__content {
+      width: 60%;
+      padding-left: 15px;
     text-align: right;
 }
+.govuk-header__navigation {
+    display: block;
+    text-align: right;
+    float: right;
+  }
+
+.govuk-header__logo {
+    width: 40%;
+    padding-right: 0;
+  }
