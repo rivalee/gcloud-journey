@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Your G-Cloud 12 services
+
+      </h1>
+      <p>
+
+        The information you provide here: </p>
+        <ul class="govuk-list govuk-list--bullet">
+
+          <li>will be public</li>
+          <li>maybe used as filters </li>
+          <li>will appear on your service description page</li>
+          <li>should help buyers review and compare services </li>
+        </ul>
+        
+          <p>
+          <button class="govuk-button" data-module="govuk-button">
+            Add a G-Cloud service
+          </button>
+          </p>
+
+    </div>
+  </div>
+
+{% endblock %}
