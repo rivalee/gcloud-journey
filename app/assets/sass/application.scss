@@ -34,3 +34,9 @@ $govuk-assets-path: '/govuk/assets/';
     width: 40%;
     padding-right: 0;
   }
+
+
+.service-title {
+  border-bottom: 1px solid  $govuk-border-colour;
+  padding: 12px 0 0 14px;
+}
