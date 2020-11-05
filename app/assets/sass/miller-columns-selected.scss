@@ -1,3 +1,5 @@
+@import "node_modules/govuk-frontend/govuk/base";
+
 .miller-columns-selected {
   @include govuk-responsive-margin(6, "bottom");
   display: block;
