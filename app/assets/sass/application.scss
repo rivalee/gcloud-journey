@@ -54,3 +54,7 @@ $govuk-include-default-font-face: false;
   border-bottom: 1px solid  $govuk-border-colour;
   padding: 14px 0 0 14px;
 }
+
+.hide-checkbox {
+  visibility: hidden;
+}
