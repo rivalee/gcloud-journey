@@ -55,22 +55,7 @@ $govuk-include-default-font-face: false;
   padding: 14px 0 0 14px;
 }
 
-.hide-checkbox {
-  visibility: hidden;
-}
 
-.nobox .govuk-checkboxes__label:before, .nobox .govuk-checkboxes__label:after {
-position: absolute !important;
-width: 1px !important;
-height: 1px !important;
-margin: 0 !important;
-padding: 0 !important;
-overflow: hidden !important;
-clip: rect(0 0 0 0) !important;
-clip-path: inset(50%) !important;
-border: 0 important;
-}
-
-.nobox .govuk-checkboxes__item { 
-padding-left: 0px;
-}
+div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__label::before { display: none; }
+div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__label::after { display: none; }
+div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__item { padding-left: 0; }
