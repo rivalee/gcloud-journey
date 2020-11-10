@@ -59,3 +59,8 @@ $govuk-include-default-font-face: false;
 div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__label::before { display: none; }
 div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__label::after { display: none; }
 div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__item { padding-left: 0; }
+
+
+.miller-columns__column {
+  width: 50% !important;
+}
