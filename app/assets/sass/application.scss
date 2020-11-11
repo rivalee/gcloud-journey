@@ -31,35 +31,33 @@ $govuk-include-default-font-face: false;
 
 // Component specific styles
 @import "miller-columns";
+@import "components/autocomplete";
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 .govuk-header__content {
-      width: 60%;
-      padding-left: 15px;
-    text-align: right;
+  width: 60%;
+  padding-left: 15px;
+  text-align: right;
 }
 .govuk-header__navigation {
-    display: block;
-    text-align: right;
-    float: right;
-  }
+  display: block;
+  text-align: right;
+  float: right;
+}
 
 .govuk-header__logo {
-    width: 40%;
-    padding-right: 0;
-  }
-
+  width: 40%;
+  padding-right: 0;
+}
 
 .service-title {
   border-bottom: 1px solid  $govuk-border-colour;
   padding: 14px 0 0 14px;
 }
 
-
 div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__label::before { display: none; }
 div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__label::after { display: none; }
 div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__item { padding-left: 0; }
-
 
 .miller-columns__column {
   width: 50% !important;

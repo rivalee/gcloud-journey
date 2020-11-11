@@ -7,4 +7,11 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
+
+  var $autocompleteInput = document.querySelector('[data-module=autocomplete]')
+
+  if ($autocompleteInput) {
+    var autocomplete = new window.GOVUK.Modules.Autocomplete()
+    autocomplete.start($autocompleteInput)
+  }
 })

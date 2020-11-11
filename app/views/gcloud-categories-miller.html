@@ -22,6 +22,8 @@
 
 <miller-columns-selected id="selected-items" for="miller-columns" class="miller-columns-selected"></miller-columns-selected>
 
+{% include "includes/autocomplete.html" %}
+
 <miller-columns class="miller-columns" for="taxonomy" selected="selected-items" id="miller-columns" aria-describedby="navigation-instructions">
   <ul id="taxonomy">
     <li>
@@ -1803,7 +1805,4 @@
     </ul>
 
 </miller-columns>
-
-<script src="/public/javascripts/miller-columns.js"></script>
-
 {% endblock %}
