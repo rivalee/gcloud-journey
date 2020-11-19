@@ -1,0 +1,46 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Create login
+      </h1>
+
+      <p>Use your work email address to create your account.</p>
+
+      <p>It won’t be visible on the Digital Marketplace. </p>
+
+      <p>You can add other email addresses to your supplier account later. </p>
+
+
+      <h3 class="govuk-heading-m">
+      Your email address
+      </h3>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="email">
+              </label>
+              <div id="email-hint" class="govuk-hint">
+              This should be your individual work email address
+              </div>
+              <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+            </div>
+
+
+            <a href="gcloud-service-type">
+          <button class="govuk-button" data-module="govuk-button">
+          Continue
+          </button>
+          </a>
+
+
+    </div>
+  </div>
+
+{% endblock %}

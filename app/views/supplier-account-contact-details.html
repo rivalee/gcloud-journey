@@ -1,0 +1,71 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Your company details
+      </h1>
+      <p>This information will be visible on the Digital Marketplace.</p>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email">
+          Company name
+        </label>
+        <div id="email-hint" class="govuk-hint">
+          This is how buyers will see your company’s name on the Digital Marketplace
+        </div>
+        <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+      </div>
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email">
+          Contact name
+        </label>
+        <div id="email-hint" class="govuk-hint">
+          This should be the name of the person you want buyers to contact
+        </div>
+        <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email">
+          Contact email
+        </label>
+        <div id="email-hint" class="govuk-hint">
+          This is the email buyers will use to contact you
+        </div>
+        <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+      </div>
+
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="email">
+                Contact phone number
+
+              </label>
+              <div id="email-hint" class="govuk-hint">
+              This is the phone number buyers will use to contact you
+              </div>
+              <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+            </div>
+
+
+            <a href="supplier-account-create-login">
+          <button class="govuk-button" data-module="govuk-button">
+          Continue
+          </button>
+          </a>
+
+
+    </div>
+  </div>
+
+{% endblock %}
