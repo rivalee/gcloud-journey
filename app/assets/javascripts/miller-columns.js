@@ -230,7 +230,10 @@
       key: 'selectedTopics',
       get: function get() {
         return this.topics.reduce(function (memo, topic) {
-          if (topic.selected) {
+          // We only want an item to count as selected once one of its
+          // children is selected. We can check if an item is the root
+          // item by checking its "parent" property.
+          if (topic.selected && topic.parent != null) {
             memo.push(topic);
           }
 
