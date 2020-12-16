@@ -6,39 +6,102 @@
 {% endblock %}
 
 
+
+
+{% block main %}
+  <div class="start-page-banner">
+
+    <div class="govuk-width-container">
+      <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list  white-links">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">GOV.UK services</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Digital Marketplace</a>
+    </li>
+  </ol>
+</div>
+<!--
+      <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+          {{ govukTag({
+            text: "BETA",
+            classes: "govuk-phase-banner__content__tag start-page-banner__tag"
+          }) | indent(4) | trim }}
+          <!--
+          <span class="govuk-phase-banner__text start-page-banner__text">
+            This is a prototype of a new service. <a href="#" class="govuk-link start-page-banner__link">Give feedback to help us improve this service</a>.
+          </span>
+
+    -->
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="start-page-banner__text start-page-banner__heading govuk-heading-xl">Buy or sell digital services and support for the public sector
+</h1>
+          <p class="start-page-banner__text start-page-banner__description govuk-body govuk-!-font-size-27">Some text about the Digital Marketplace.</p>
+          <div class="start-page-banner__actions">
+            {{ govukButton({
+              text: "Sign in",
+              href: "/sign-in",
+              classes: "start-page-banner__button",
+              isStartButton: true
+            }) }}
+            <p class="govuk-body start-page-banner__text">or
+            <a class="govuk-link govuk-link--no-visited-state" href="/home">create an account</a></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  {# pulls in default gov uk template #}
+  {{super()}}
+{% endblock %}
+
 {% block content %}
 
 
 
-
-<div class="govuk-width-container">
-  <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <p>Trying to make this go 100% wide</p>
-  </div>
-</div>
-
-
-
-
-<div class="product-page-intro">
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <h1 class="govuk-heading-xl product-page-intro">
-      Buy or sell digital services and support for the public sector
-    </h1>
-      </div>
-    </div>
-    </div>
-
-
     <div class="govuk-grid-column-two-thirds">
+  <h2 class="govuk-heading-m">
+      Find technology or people for digital projects in the public sector
+      </h2>
 
-      <p>
-        Page content
-      </p>
+<!--
+  <h3 class="govuk-heading-m">Find an individual specialist</h3>
+  <p>eg a developer or user researcher</p>
 
+  <h3 class="govuk-heading-m">  Find a team to provide an outcome</h3>
+  <p>eg a booking system or accessibility audit</p>
+
+    <h3 class="govuk-heading-m">Find user research participants</h3>
+  <p>eg people from a specific user group to test your service</p>
+
+    <h3 class="govuk-heading-m">Find a user research lab
+  eg a room to conduct research sessions
+  <h3 class="govuk-heading-m">
+  Find cloud hosting, software and support
+  </h3>
+  <p>eg content delivery networks or accounting software</p>
+
+  <h3 class="govuk-heading-m">
+  Find physical datacentre space
+  </h3>
+  <p>
+  eg access to mission-critical datacentres
+  </p>
+-->
     </div>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-m">Sell services</h3>
+      </div>
+
   </div>
 
 {% endblock %}
