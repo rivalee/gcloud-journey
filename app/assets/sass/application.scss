@@ -92,3 +92,16 @@ div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__item { padding-l
 .app-task-list__items {
     margin-left: -30px !important;
 }
+
+.product-page-intro {
+  width: 100%;
+    position: relative;
+    margin: -10px 0 45px 0;
+    padding: 0 0 60px 0;
+    background: #005ea5;
+    color: #fff !important;
+  }
+  
+.govuk-width-container {
+  width: 100%;
+}
