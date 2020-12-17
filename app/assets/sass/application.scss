@@ -98,3 +98,23 @@ div[data-root=true] .govuk-checkboxes--small .govuk-checkboxes__item { padding-l
 .start-page-banner {
   margin-top: -10px;
 }
+
+
+.govuk-breadcrumbs__link {
+  color: white !important;
+}
+
+.govuk-breadcrumbs__list-item:before {
+  border-color: white !important;
+}
+
+.govuk-breadcrumbs {
+  padding-bottom: 10px;
+border-bottom: 1px solid rgba(255,255,255,.25) !important;
+margin-bottom: 50px;
+}
+
+.name {
+font-weight: bolder !important;
+text-decoration: none !important;
+}
